@@ -1,15 +1,36 @@
-/*
- * This is a manifest file that'll be compiled into application.css, which will include all the files
- * listed below.
- *
- * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
- * vendor/assets/stylesheets directory can be referenced here using a relative path.
- *
- * You're free to add application-wide styles to this file and they'll appear at the bottom of the
- * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
- * files in this directory. Styles in this file should be added after the last require_* statement.
- * It is generally better to create a new file per style scope.
- *
- *= require_tree .
- *= require_self
- */
+.h3
+{
+    padding: 80px;
+    border: 1px solid silver;
+    box-shadow: 15px 15px 15px silver;
+    border-radius: 7px;
+    font-size: 17px;
+    font-family: Candara;
+    font-weight: bold;
+}
+
+table
+{
+    font-family: Candara;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+th
+{
+    font-size: 25px;
+}
+
+td
+{
+    text-align: center;
+    background-color: white;
+}
+
+body
+{
+    background-image: linear-gradient(#FFFDBE, #EAE429);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 908px;
+}
