@@ -1,3 +1,41 @@
-// Place all the styles related to the Posts controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+.h3
+{
+    padding: 80px;
+    border: 1px solid silver;
+    box-shadow: 15px 15px 15px silver;
+    border-radius: 7px;
+    font-size: 17px;
+    font-family: Candara;
+    font-weight: bold;
+}
+
+table
+{
+    font-family: Candara;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+th
+{
+    font-size: 25px;
+}
+
+td
+{
+    text-align: center;
+    background-color: white;
+}
+
+body
+{
+    background-image: linear-gradient(#FFFDBE, #EAE429);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 908px;
+}
+
+button
+{
+    color: green;
+}
