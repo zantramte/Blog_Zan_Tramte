@@ -1,8 +1,8 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Posts</h1>
+<h1 style="font-size: 50px; font-family: Candara; margin-left: 45%">Posts</h1>
 
-<table>
+<table style="margin-left: 25%; position: relative;">
   <thead>
     <tr>
       <th>Title</th>
@@ -15,7 +15,7 @@
     <% @posts.each do |post| %>
       <tr>
         <td class="h3"><%= post.title %></td>
-        <td class="h3"><%= post.body %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button><%= link_to 'Show', post %></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button><%= link_to 'Edit', edit_post_path(post) %></button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button><%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></button></td>
+        <td class="h3"><%= post.body %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= link_to 'Show', post %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= link_to 'Edit', edit_post_path(post) %>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%= link_to 'Destroy', post, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -23,4 +23,4 @@
 
 <br>
 
-<%= link_to 'New Post', new_post_path %>
+<b class="bb" style="font-size: 30px; font-family: Candara;"><%= link_to 'New Post', new_post_path%></b>

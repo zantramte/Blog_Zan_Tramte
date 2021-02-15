@@ -34,3 +34,8 @@ body
     background-size: cover;
     height: 908px;
 }
+
+button
+{
+    color: green;
+}
